@@ -51,6 +51,38 @@ storage = {
     //in line 35, what happens is
     '7' : 0,
 }
+
+ITERATION 2
+we have the hash value, return the value of it which is index, and current index
+//---------------------------------------
+visualizatopn fpr example 2 [3,2,4]
+ITERATION 1
+i = 0
+currentValue = 3
+storage = {
+    //in line 35
+    '3':0
+} 
+
+ITERATION 2
+i = 1
+currentValue = 2 //target is 6, so we want to store in storage 2-6 = '4'
+storage = {
+    //in line 35
+    '3':0
+    '4':1
+} 
+
+ITERATION 3
+i = 2
+currentValue = 4
+hashStorage[currentValue] exists!
+storage = {
+    //in line 35
+    '3':0
+    '4':1
+} 
+we have the hash value, return the value of it which is index, and current index
 */
 nums = [2,7,11,15];
 nums2 = [3,2,4];
