@@ -41,6 +41,7 @@ const twoSum = (array, target) => {
     }
 }
 
+
 /* 
 visualization  of example 1 [2,7,11,15]
 in first iteration:
@@ -54,8 +55,9 @@ storage = {
 
 ITERATION 2
 we have the hash value, return the value of it which is index, and current index
-//---------------------------------------
+//-----------------------------------------------------------------------------------------
 visualizatopn fpr example 2 [3,2,4]
+target: 6
 ITERATION 1
 i = 0
 currentValue = 3
