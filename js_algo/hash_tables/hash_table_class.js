@@ -34,28 +34,33 @@ _hash(key) {
         }
         return hash;
     }
-}
 
-keys() {
-    if (!this.data.length) {
-        return undefined
-    }
 
-    let keysArray = [];
-    for(let i =0; i < this.data.length; i++){
-        if(this.data[i] && this.data[i].length){ //if there is data here on this shelf/bucket
-            if (this.data.length > 1) {
-                for (let j = 0; j < this.data[i].length; j++) {
-                    result.push(this.data[i][j][0])
-                }
-            } else {
-                keysArray.push(this.data[i][0])
-            } 
-            // keysArray.push(this.data[i][0][0]); //add onto our keys array
+    keys() {
+        if (!this.data.length) {
+            return undefined
         }
+    
+        let keysArray = [];
+        for(let i =0; i < this.data.length; i++){
+            if(this.data[i] && this.data[i].length){ //if there is data here on this shelf/bucket
+                if (this.data.length > 1) {
+                    for (let j = 0; j < this.data[i].length; j++) {
+                        result.push(this.data[i][j][0])
+                    }
+                } else {
+                    keysArray.push(this.data[i][0])
+                } 
+                // keysArray.push(this.data[i][0][0]); //add onto our keys array
+            }
+        }
+        return keysArray;
     }
-    return keysArray;
-}
+
+}//end class hash
+
+
+
 
 const myHashTable = new HashTable(50);
 myHashTable.set('first_item', 777)
