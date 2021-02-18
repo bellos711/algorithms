@@ -51,7 +51,7 @@ _hash(key) {
                 } else {
                     keysArray.push(this.data[i][0])
                 } 
-                // keysArray.push(this.data[i][0][0]); //add onto our keys array
+                // keysArray.push(this.data[i][0][0]); //add onto our keys array 
             }
         }
         return keysArray;
