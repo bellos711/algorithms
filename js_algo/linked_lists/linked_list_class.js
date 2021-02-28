@@ -65,7 +65,7 @@ class LinkedList{
         const endIndex = this.length-1;
         if(index >= endIndex){
             
-            const runner = this.traverseListToIndex(endIndex-1)
+            const runner = this.traverseListToIndex(endIndex-1) //the node before the last index
             // this.tail = runner;
             // this.tail.next = null;
             runner.next = null;
@@ -94,6 +94,35 @@ class LinkedList{
             counter++;
         }
         return currentNode;
+    }
+
+    reverse(){
+        if(!this.head.next){
+            return this;
+        }
+
+        let first = this.head;
+        this.tail = first;
+        let second = first.next;
+        while(second){//while second node exists which is the value after first.next
+            let temp = second.next; //we need this value after second because we shift over
+            second.next = first;
+            first = second;
+            second = temp;
+        } 
+        this.head.next= null;
+        this.head = first; 
+    }
+
+    //other functions of linkedlist
+    reverseLinkedListAsArray(){
+        const array = [];
+        let runner = this.head;
+        while(runner !== null){
+            array.unshift(runner/value);
+            runner = runner.next;
+        }
+        return array;
     }
 }
 
