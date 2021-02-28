@@ -46,7 +46,7 @@ _hash(key) {
             if(this.data[i] && this.data[i].length){ //if there is data here on this shelf/bucket
                 if (this.data.length > 1) {
                     for (let j = 0; j < this.data[i].length; j++) {
-                        result.push(this.data[i][j][0])
+                        keysArray.push(this.data[i][j][0])
                     }
                 } else {
                     keysArray.push(this.data[i][0])
