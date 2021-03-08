@@ -96,6 +96,7 @@ class LinkedList{
         return currentNode;
     }
 
+    //---------------------------------------------------
     reverse(){
         if(!this.head.next){
             return this;
