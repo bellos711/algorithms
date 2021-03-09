@@ -11,11 +11,29 @@ class BinarySearchTree{
         this.root = null;
     }
 
+//make sure to kinda draw this out.
     insert(value){
         const newNode = new Node(value);
-        if(this.root===null){
+        if(this.root === null){
             this.root = newNode;
-            return this;
+        } else {
+            let currentNode = this.root;
+            while(true){
+                if(value < currentNode.value){
+                    if(!currentNode.left){
+                        currentNode.left = newNode;
+                        return this;
+                    }
+                    currentNode = currentNode.left;
+                } 
+                else if(value > currentNode.value){
+                    if(!currentNode.right){
+                        currentNode.right = newNode;
+                        return this;
+                    }
+                    currentNode = currentNode.right;
+                }
+            }
         }
     }
 
