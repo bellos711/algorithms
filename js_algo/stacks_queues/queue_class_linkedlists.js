@@ -4,7 +4,7 @@ class Node{
         this.next = null;
     }
 }
-
+//queue class using linked lists
 
 class Queue{
     constructor(){
