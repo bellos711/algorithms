@@ -94,4 +94,8 @@ target = 9;
 target2 = 6;
 target3 = 6;
 target4 = 18;
-twoSum(nums4, target4);
+console.log(twoSum(nums, target))
+
+let myHash = {};
+myHash['myKey1'] = 77;
+console.log([myHash['myKey1']])
