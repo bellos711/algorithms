@@ -46,7 +46,6 @@ const sum_from_strings_complex = (thisString) => {
                     followingValue = thisString[i+counter]; //reassign followingValue to the one next to it
                 }
 
-                
             }
 
             // console.log(numberString)
