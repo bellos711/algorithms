@@ -10,6 +10,7 @@ console.log(fibonacciRecursive(6));
 console.log('-------------------------------------')
 
 function fibonacciIterative(n){
+    //using arrays
     let arr = [0,1];
     //start at 2 bec we go to index 2 onwards
     for(let i = 2; i <= n; i++){
