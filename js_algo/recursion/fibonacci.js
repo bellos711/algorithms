@@ -7,7 +7,7 @@ function fibonacciRecursive(n){
 }
 
 console.log(fibonacciRecursive(6));
-console.log('-------------------------------------')
+console.log('--------------------------------------')
 
 function fibonacciIterative(n){
     //using arrays
